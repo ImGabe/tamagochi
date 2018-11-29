@@ -1,3 +1,4 @@
+#coding: utf-8
 from random import randint
 
 class Tamagochi:
@@ -10,33 +11,28 @@ class Tamagochi:
     self.felicidade = 100
     self.vivo = True
 
+  # printar
+  def printar(self, metodo):
+    if callable(metodo): 
+      print(metodo())
+    else: 
+      print(metodo)
+      
   # nome
-  def mostrar_nome(self):
-    print(f"O nome do seu tamagochi é {self.nome}.")
+  def set_nome(self, name):
+    return f"O nome do seu tamagochi é {self.nome}."
 
   # nivel
-  def mostrar_nivel(self):
-    print(f"Nivel: {self.nivel}")
+  def set_nivel(self):
+    return f"Nivel: {self.nivel}"
 
   def subir_nivel(self):
     self.nivel += 1
     print(f"{self.nome} upou para o nível {self.nivel}")
 
-  # fome
-  def mostrar_fome(self):
-    print(f"Fome: {self.fome}")
-
-  def subir_fome(self):
-    n = randint(1, 10)
-    self.fome += n
-
-  def descer_fome(self):
-    n = randint(1, 10)
-    self.fome -= n
-
   # vida 
-  def mostrar_vida(self):
-    print(f"Vida: {self.vida}")
+  def set_vida(self):
+    return f"Vida: {self.vida}"
 
   def subir_vida(self):
     n = randint(1, 10)
@@ -46,9 +42,21 @@ class Tamagochi:
     n = randint(1, 10)
     self.vida -= n
 
+  # fome
+  def set_fome(self):
+    return f"Fome: {self.fome}"
+
+  def subir_fome(self):
+    n = randint(1, 10)
+    self.fome += n
+
+  def descer_fome(self):
+    n = randint(1, 10)
+    self.fome -= n
+
   # energia
-  def mostrar_energia(self):
-    print(f"Energia: {self.energia}")
+  def set_energia(self):
+    return f"Energia: {self.energia}"
 
   def subir_energia(self):
     n = randint(1, 10)
@@ -59,8 +67,8 @@ class Tamagochi:
     self.energia -= n
 
   # felicidade
-  def mostrar_felicidade(self):
-    print(f"Felicidade: {self.felicidade}")
+  def set_felicidade(self):
+    return f"Felicidade: {self.felicidade}"
 
   def subir_felicidade(self):
     n = randint(1, 10)
@@ -71,20 +79,23 @@ class Tamagochi:
     self.felicidade -= n
 
   # Profile e Status
-  def mostrar_profile(self):
-    self.mostrar_nome()
-    self.mostrar_nivel()
-    self.mostrar_fome()
-    self.mostrar_vida()
-    self.mostrar_energia()
-    self.mostrar_felicidade()
 
   def mostrar_status(self):
-    self.mostrar_nivel()
-    self.mostrar_fome()
-    self.mostrar_vida()
-    self.mostrar_energia()
-    self.mostrar_felicidade()
+    self.printar(self.nivel)
+    self.printar(self.vida)
+    self.printar(self.fome)
+    self.printar(self.energia)
+    self.printar(self.felicidade)
+
+  def mostrar_profile(self):
+    self.printar(self.nome)
+    self.mostrar_status()
+
+  # Ações
+  def brincar(self):
+    self.subir_felicidade()
+    self.subir_fome()
+    self.descer_energia()
 
 # inicia o projeto
 if __name__ == '__main__':
