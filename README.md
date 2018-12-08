@@ -1,6 +1,8 @@
-# 👾‍‍ Tamagochi 👾‍‍
+# 👾‍‍ Tamagochi 👾‍‍ [ Working... 🛠 ]
 
 [![Build Status](https://travis-ci.com/ImGabe/Tamagochi.svg?branch=master)](https://travis-ci.com/ImGabe/Tamagochi)
+[![CodeFactor](https://www.codefactor.io/repository/github/imgabe/tamagochi/badge)](https://www.codefactor.io/repository/github/imgabe/tamagochi)
+[![Known Vulnerabilities](https://snyk.io/test/github/ImGabe/Tamagochi/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/ImGabe/Tamagochi?targetFile=requirements.txt)
 
 ## PT-BR
 
