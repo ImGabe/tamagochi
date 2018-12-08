@@ -17,6 +17,13 @@ class Tamagochi:
       print(metodo())
     else: 
       print(metodo)
+
+  # verificar nome
+  def verificar_nome(self, nome):
+    while self.nome == "":
+      self.nome = input("Nome: ").strip()
+    else:
+      pass
       
   # nome
   def set_nome(self, name):
@@ -81,14 +88,14 @@ class Tamagochi:
   # Profile e Status
 
   def mostrar_status(self):
-    self.printar(self.nivel)
-    self.printar(self.vida)
-    self.printar(self.fome)
-    self.printar(self.energia)
-    self.printar(self.felicidade)
+    self.printar(f"Nivel: {self.nivel}")
+    self.printar(f"Vida: {self.vida}")
+    self.printar(f"Fome: {self.fome}")
+    self.printar(f"Energia: {self.energia}")
+    self.printar(f"Felicidade: {self.felicidade}")
 
   def mostrar_profile(self):
-    self.printar(self.nome)
+    self.printar(f"O nome do seu tamagochi é {self.nome}.")
     self.mostrar_status()
 
   # Ações
@@ -100,5 +107,6 @@ class Tamagochi:
 # inicia o projeto
 if __name__ == '__main__':
   tamagochi = Tamagochi()
-  tamagochi.nome = "Jabe"
+  tamagochi.nome = "404"
+  tamagochi.verificar_nome(tamagochi.nome)
   tamagochi.mostrar_profile()
