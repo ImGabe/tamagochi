@@ -17,7 +17,7 @@
 
 Abra o promt de comando (CMD) / powershell / terminal e digite:
 
-`git clone <link>`
+`git clone https://github.com/ImGabe/Tamagochi`
 
 **Sem git**
  
@@ -25,7 +25,7 @@ Faça o Download do arquivo **.zip** e extraia a pasta.
 
 ### Modo de uso 
 
-Entre na pasta gerada após o download e digite no promt de comando (CMD) / powershell / terminal:
+Entre na pasta gerada após o download e digite no prompt de comando (CMD) / powershell / terminal:
 
 `pip install -r requirements.txt`
 
@@ -35,4 +35,31 @@ E pronto! 🎉
 
 ### Em caso de erro
 
-## EN-US ( Working... 🛠 )
+## EN-US 
+
+### Requirements  ⚙
+* Python 3.6
+* git (optional)
+* Winrar/7zip/... (*If Downloading without git*)
+
+### Download
+
+**Using git**
+
+Open your Terminal and write:
+
+`git clone https://github.com/ImGabe/Tamagochi`
+
+**Without git**
+ 
+Download the files and extract them.
+
+### How to use 
+
+Using your terminal, go into the file and write this:
+
+`pip install -r requirements.txt`
+
+`py main.py` / `python main.py` / `python3 main.py`
+
+Now you're ready to play! 🎉
