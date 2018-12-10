@@ -11,7 +11,7 @@
 * git (opcional)
 * Winrar/7zip/... (*Download Sem git*)
 
-### Download  
+### Download ⬇
 
 **Com git**
 
@@ -23,7 +23,7 @@ Abra o promt de comando (CMD) / powershell / terminal e digite:
  
 Faça o Download do arquivo **.zip** e extraia a pasta.
 
-### Modo de uso 
+### Modo de uso 🗒
 
 Entre na pasta gerada após o download e digite no promt de comando (CMD) / powershell / terminal:
 

@@ -1,1 +1,5 @@
 .editorconfig
+example.log
+.vscode
+database
+__pycache__

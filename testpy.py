@@ -1,5 +1,7 @@
 #coding: utf-8
 from random import randint
+import tamagochidb
+import logger
 
 class Tamagochi:
   def __init__(self):
@@ -24,7 +26,7 @@ class Tamagochi:
       self.nome = input("Nome: ").strip()
     else:
       pass
-      
+  
   # nome
   def set_nome(self, name):
     return f"O nome do seu tamagochi é {self.nome}."
@@ -107,6 +109,8 @@ class Tamagochi:
 # inicia o projeto
 if __name__ == '__main__':
   tamagochi = Tamagochi()
-  tamagochi.nome = "404"
+  tamagochi.nome = input("Nome: ").strip()
   tamagochi.verificar_nome(tamagochi.nome)
+  tamagochidb.adicionar(tamagochi.nome, tamagochi.nivel)
+  logger.log_info(f"Tamagochi criado - Nome: {tamagochi.nome}")
   tamagochi.mostrar_profile()
