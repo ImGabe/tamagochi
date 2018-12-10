@@ -109,7 +109,7 @@ class Tamagochi:
 # inicia o projeto
 if __name__ == '__main__':
   tamagochi = Tamagochi()
-  tamagochi.nome = input("Nome: ").strip()
+  tamagochi.nome = "Jabe"
   tamagochi.verificar_nome(tamagochi.nome)
   tamagochidb.adicionar(tamagochi.nome, tamagochi.nivel)
   logger.log_info(f"Tamagochi criado - Nome: {tamagochi.nome}")
