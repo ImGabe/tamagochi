@@ -23,8 +23,6 @@ class Tamagochi:
     def verificar_nome(self, nome):
         while self.nome == "":
             self.nome = input("Nome: ").strip()
-        else:
-            pass
 
     # Eventos
 
