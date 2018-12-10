@@ -1,5 +1,7 @@
 #coding: utf-8
 from random import randint
+import tamagochidb
+import logger
 
 
 class Tamagochi:
@@ -23,12 +25,6 @@ class Tamagochi:
     def verificar_nome(self, nome):
         while self.nome == "":
             self.nome = input("Nome: ").strip()
-
-    # Eventos
-
-    # gerador de evento
-    def funcname(self):
-        pass
 
     # nome
     def set_nome(self, name):
@@ -115,4 +111,6 @@ if __name__ == '__main__':
     tamagochi = Tamagochi()
     tamagochi.nome = input("Nome: ").strip()
     tamagochi.verificar_nome(tamagochi.nome)
+    tamagochidb.adicionar(tamagochi.nome, tamagochi.nivel)
+    logger.log_info(f"Tamagochi criado - Nome: {tamagochi.nome}")
     tamagochi.mostrar_profile()

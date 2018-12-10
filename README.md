@@ -6,6 +6,13 @@
 
 ## PT-BR
 
+### Metas 📌
+
+- [ ] Ações do tamagochi
+- [ ] Interface gráfica
+- [ ] Salvar dados
+- [ ] Login por nome
+
 ### Requistos ⚙
 * Python 3.6
 * git (opcional)
@@ -34,6 +41,13 @@ Entre na pasta gerada após o download e digite no prompt de comando (CMD) / pow
 E pronto! 🎉
 
 ## EN-US 
+
+### Goals 📌
+
+- [ ] Tamagochi actions
+- [ ] Graphic Interface
+- [ ] Save data
+- [ ] Login by name
 
 ### Requirements  ⚙
 * Python 3.6

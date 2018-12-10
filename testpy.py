@@ -21,10 +21,16 @@ class Tamagochi:
         else:
             print(metodo)
 
+    # save in database and add in log
+    def save(self, name):
+        tamagochidb.adicionar(self.nome, self.nivel)
+        logger.log_info(f"Tamagochi criado - Nome: {tamagochi.nome}")
+
     # verificar nome
-    def verificar_nome(self, nome):
-        while self.nome == "":
-            self.nome = input("Nome: ").strip()
+    def verificar_nome(self, name):
+      while self.nome == "":
+        self.nome = input("Nome: ").strip()
+      self.save(name)
 
     # nome
     def set_nome(self, name):
@@ -109,8 +115,6 @@ class Tamagochi:
 # inicia o projeto
 if __name__ == '__main__':
     tamagochi = Tamagochi()
-    tamagochi.nome = "Jabe"
+    tamagochi.nome = input("Nome: ").strip()
     tamagochi.verificar_nome(tamagochi.nome)
-    tamagochidb.adicionar(tamagochi.nome, tamagochi.nivel)
-    logger.log_info(f"Tamagochi criado - Nome: {tamagochi.nome}")
     tamagochi.mostrar_profile()
