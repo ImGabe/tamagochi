@@ -33,8 +33,6 @@ Entre na pasta gerada após o download e digite no prompt de comando (CMD) / pow
 
 E pronto! 🎉
 
-### Em caso de erro
-
 ## EN-US 
 
 ### Requirements  ⚙
@@ -42,7 +40,7 @@ E pronto! 🎉
 * git (optional)
 * Winrar/7zip/... (*If Downloading without git*)
 
-### Download
+### Download ⬇
 
 **Using git**
 
@@ -54,7 +52,7 @@ Open your Terminal and write:
  
 Download the files and extract them.
 
-### How to use 
+### How to use 🗒
 
 Using your terminal, go into the file and write this:
 

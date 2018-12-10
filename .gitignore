@@ -1,5 +1,5 @@
 .editorconfig
-example.log
+tamagochi_logs.log
 .vscode
 database
 __pycache__
