@@ -6,6 +6,12 @@
 
 ## PT-BR
 
+## Ajuda o projeto 🏳
+
+**O projeto** está *meio parado* pela minha falta de tempo, criatividade __e habilidade__ para continua-lo. Estou fazendo tudo vagarosamente, e por isso, peço ajuda com sugestões, traduções, dicas, etc
+
+Adicione-me no [**Discord**](https://discordapp.com/) para mais informações sobre o projeto: **Gabe#4346**
+
 ### Metas 📌
 
 - [ ] Ações do tamagochi

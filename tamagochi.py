@@ -1,4 +1,4 @@
-# coding: utf-8
+#coding: utf-8
 from random import randint
 import tamagochidb
 import logger
@@ -8,7 +8,6 @@ class Tamagochi:
     def __init__(self):
         self.nome = 'sem_nome'
         self.nivel = 0
-        self.experiencia = 0
         self.fome = 0
         self.vida = 100
         self.energia = 100
@@ -22,20 +21,10 @@ class Tamagochi:
         else:
             print(metodo)
 
-    # save in database and add in log
-    def save(self, name):
-        tamagochidb.adicionar(self.nome, self.nivel)
-        logger.log_info(f"Tamagochi criado - Nome: {tamagochi.nome}")
-
-    # Logger
-    def acoes_log(self, acao):
-        logger.log_info(f"Nome: {tamagochi.nome} - {acao}")
-
     # verificar nome
-    def verificar_nome(self, name):
+    def verificar_nome(self, nome):
         while self.nome == "":
             self.nome = input("Nome: ").strip()
-        self.save(name)
 
     # nome
     def set_nome(self, name):
@@ -48,13 +37,6 @@ class Tamagochi:
     def subir_nivel(self):
         self.nivel += 1
         print(f"{self.nome} upou para o nível {self.nivel}")
-
-    # experiencia
-    def set_xp(self):
-        pass
-
-    def subir_xp(self):
-        pass
 
     # vida
     def set_vida(self):
@@ -99,15 +81,10 @@ class Tamagochi:
     def subir_felicidade(self):
         n = randint(1, 10)
         self.felicidade += n
-        if self.felicidade >= 0:
-            self.felicidade = 100
 
     def descer_felicidade(self):
         n = randint(1, 10)
         self.felicidade -= n
-        if self.felicidade <= 0:
-            self.felicidade = 0
-            print("Depressivo")
 
     # Profile e Status
 
@@ -123,32 +100,29 @@ class Tamagochi:
         self.mostrar_status()
 
     # Ações
-
     def brincar(self):
         self.subir_felicidade()
         self.subir_fome()
         self.descer_energia()
-        self.acoes_log("Brincar")
 
-    def comer(self):
-        self.descer_fome()
-        self.subir_energia()
-        self.acoes_log("comer")
 
-    def dormir(self):
-        self.subir_fome()
-        self.subir_energia()
-        self.acoes_log("Dormir")
+class Sades(Tamagochi):
+    def __init__(self):
+        self.vida = 200
+        self.energia = 100
+        self.felicidade = 100
 
-# inicia o projeto
-if __name__ == '__main__':
-    tamagochi = Tamagochi()
-    tamagochi.nome = "Jabe"
-    tamagochi.verificar_nome(tamagochi.nome)
-    tamagochi.mostrar_profile()
-    tamagochi.brincar()
-    tamagochi.mostrar_status()
-    tamagochi.comer()
-    tamagochi.mostrar_status()
-    tamagochi.dormir()
-    tamagochi.mostrar_status()
+class Greleaf(Tamagochi):
+    def __init__(self):
+        self.vida = 100
+        self.energia = 200
+        self.felicidade = 100
+
+
+class Nekomon(Tamagochi):
+    def __init__(self):
+        self.vida = 100
+        self.energia = 100
+        self.felicidade = 200
+
+
