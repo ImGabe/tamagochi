@@ -8,7 +8,7 @@
 
 ## Ajuda o projeto 🏳
 
-**O projeto** está *meio parado* pela minha falta de tempo, criatividade __e habilidade__ para continua-lo. Estou fazendo tudo vagarosamente, e por isso, peço ajuda com sugestões, traduções, dicas, etc
+**O projeto** está *meio parado* pela minha falta de tempo, criatividade __e habilidade__ para continua-lo. Estou fazendo tudo vagarosamente, e por isso, peço ajuda com sugestões, traduções, dicas, etc.
 
 Adicione-me no [**Discord**](https://discordapp.com/) para mais informações sobre o projeto: **Gabe#4346**
 
@@ -47,6 +47,12 @@ Entre na pasta gerada após o download e digite no prompt de comando (CMD) / pow
 E pronto! 🎉
 
 ## EN-US 
+
+## Help the project 🏳
+
+**The project** is a little bit slow due to my lack of time, creativity and __hability__ to continue. I'm doing things very slowly, and for this, I ask for help with suggestions, translations, tips, etc.
+
+Add me on [**Discord**](https://discordapp.com/) for more information about the project: **Gabe#4346**
 
 ### Goals 📌
 
